@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,8 +29,14 @@ namespace Fallout4Cleaner
             string[] filePaths = Directory.GetFiles(gamepath, "*", SearchOption.AllDirectories);
             foreach (string fileName in filePaths)
             {
-
-                if (fileList.Contains(Path.GetFileName(fileName)))
+                var regex = new Regex("[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}");
+                var testfo5 = regex.Match(Path.GetFileName(fileName));
+                if (testfo5.Success)
+                {
+                    //System.Console.WriteLine(Path.GetFileName(fileName));
+                    //tes5Edit or fo4Edit backup
+                }
+                else if (fileList.Contains(Path.GetFileName(fileName)))
                 {
                     //System.Console.WriteLine(Path.GetFileName(fileName));
                 }
