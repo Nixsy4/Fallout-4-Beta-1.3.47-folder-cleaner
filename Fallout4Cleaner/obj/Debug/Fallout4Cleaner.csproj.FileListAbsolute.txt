@@ -1,9 +1,0 @@
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\bin\Debug\Fallout4Cleaner.exe.config
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\bin\Debug\Fallout4Cleaner.exe
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\bin\Debug\Fallout4Cleaner.pdb
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.csprojResolveAssemblyReference.cache
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.Form1.resources
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.Properties.Resources.resources
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.csproj.GenerateResource.Cache
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.exe
-C:\Users\nicky\Documents\GitHub\Fallout-4-Beta-1.3.47-folder-cleaner\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.pdb

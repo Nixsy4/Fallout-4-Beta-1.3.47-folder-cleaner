@@ -53,9 +53,9 @@ namespace Fallout4Cleaner
                         File.Delete(fileName);
                     }
                     DirectoryInfo fileFolder = new DirectoryInfo(gamepath);
-                    Tidy(fileFolder);
-                    System.Windows.Forms.MessageBox.Show("Game folder cleaned");
+                    Tidy(fileFolder);                    
                 }
+                System.Windows.Forms.MessageBox.Show("Game folder cleaned");
             }
             else
             {
