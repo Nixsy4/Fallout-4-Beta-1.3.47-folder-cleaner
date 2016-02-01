@@ -24,30 +24,44 @@ namespace Fallout4Cleaner
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string gamepath = textBox1.Text;
 
-            string[] filePaths = Directory.GetFiles(gamepath, "*", SearchOption.AllDirectories);
-            foreach (string fileName in filePaths)
+            var confirmResult = MessageBox.Show("Are you sure you want to remove all mod files?",
+                                     "Confirm Clean!!",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
             {
-                var regex = new Regex("[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}");
-                var testfo5 = regex.Match(Path.GetFileName(fileName));
-                if (testfo5.Success)
+                string gamepath = textBox1.Text;
+                var userList = File.ReadAllLines("KeepList.txt");
+
+                string[] filePaths = Directory.GetFiles(gamepath, "*", SearchOption.AllDirectories);
+                foreach (string fileName in filePaths)
                 {
-                    //System.Console.WriteLine(Path.GetFileName(fileName));
-                    //tes5Edit or fo4Edit backup
+                    var regex = new Regex("[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}");
+                    var testfo5 = regex.Match(Path.GetFileName(fileName));
+                    if (testfo5.Success)
+                    {
+                        //System.Console.WriteLine(Path.GetFileName(fileName));
+                        //tes5Edit or fo4Edit backup
+                    }
+                    else if (fileList.Contains(Path.GetFileName(fileName)) || userList.Contains(Path.GetFileName(fileName)))
+                    {
+                        //System.Console.WriteLine(Path.GetFileName(fileName));
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("Found an odd file " + Path.GetFileName(fileName));
+                        File.Delete(fileName);
+                    }
+                    DirectoryInfo fileFolder = new DirectoryInfo(gamepath);
+                    Tidy(fileFolder);
+                    System.Windows.Forms.MessageBox.Show("Game folder cleaned");
                 }
-                else if (fileList.Contains(Path.GetFileName(fileName)))
-                {
-                    //System.Console.WriteLine(Path.GetFileName(fileName));
-                }
-                else
-                {
-                    System.Console.WriteLine("Found an odd file " + Path.GetFileName(fileName));
-                    File.Delete(fileName);
-                }
-                DirectoryInfo fileFolder = new DirectoryInfo(gamepath);
-                Tidy(fileFolder);
             }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Cleaning canceled!");
+            }
+
         }
 
         static void Tidy(DirectoryInfo tree)
