@@ -1,0 +1,9 @@
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\bin\Debug\Fallout4Cleaner.exe.config
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\bin\Debug\Fallout4Cleaner.exe
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\bin\Debug\Fallout4Cleaner.pdb
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.csprojResolveAssemblyReference.cache
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.Form1.resources
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.Properties.Resources.resources
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.csproj.GenerateResource.Cache
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.exe
+D:\Mega\MyMods\Fallout4Cleaner\Fallout4Cleaner\1.2\fallout4Beta1.3.4.7FolderCleaner\Source\Fallout4Cleaner\obj\Debug\Fallout4Cleaner.pdb

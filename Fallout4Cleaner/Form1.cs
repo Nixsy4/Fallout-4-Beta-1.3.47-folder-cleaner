@@ -31,7 +31,15 @@ namespace Fallout4Cleaner
             if (confirmResult == DialogResult.Yes)
             {
                 string gamepath = textBox1.Text;
+                if (File.Exists("KeepList.txt"))
+                {}
+                else
+                {
+                    using (FileStream fs = File.Create("KeepList.txt"))
+                    {}
+                }
                 var userList = File.ReadAllLines("KeepList.txt");
+                
 
                 string[] filePaths = Directory.GetFiles(gamepath, "*", SearchOption.AllDirectories);
                 foreach (string fileName in filePaths)
@@ -49,8 +57,15 @@ namespace Fallout4Cleaner
                     }
                     else
                     {
-                        System.Console.WriteLine("Found an odd file " + Path.GetFileName(fileName));
-                        File.Delete(fileName);
+                        System.Console.WriteLine("Found an odd file " + Path.GetFileName(fileName));                       
+                        try
+                        {
+                            File.Delete(fileName);
+                        }
+                        catch (UnauthorizedAccessException err)
+                        {
+                            System.Windows.Forms.MessageBox.Show("Error:" + err.Message);
+                        }
                     }
                     DirectoryInfo fileFolder = new DirectoryInfo(gamepath);
                     Tidy(fileFolder);                    
