@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -70,7 +71,12 @@ namespace Fallout4Cleaner
                         System.Console.WriteLine("Found an odd file " + Path.GetFileName(fileName));                       
                         try
                         {
-                            File.Delete(fileName);
+                            new Thread(() =>
+                            {
+                                Thread.CurrentThread.IsBackground = true;
+                                File.Delete(fileName);
+                            }).Start();
+                            
                         }
                         catch (UnauthorizedAccessException err)
                         {
